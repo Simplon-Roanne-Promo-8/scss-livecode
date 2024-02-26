@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Mon Site avec SCSS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1>Bienvenue sur mon site!</h1>
+        <p>Utilisons SCSS pour le rendre plus cool.</p>
+        <div class="carousel">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3>Titre card 1</h3>
+              <p>
+                Description courte de la card 1. Une intro passionnante au
+                contenu.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3>Titre card 2</h3>
+              <p>
+                Description courte de la card 2. Une intro passionnante au
+                contenu.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3>Titre card 3</h3>
+              <p>
+                Description courte de la card 3. Une intro passionnante au
+                contenu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Découvrez qui je suis et ce que je fais.</p>
+      </section>
+      <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+          <input type="text" placeholder="Votre nom" />
+          <input type="email" placeholder="Votre email" />
+          <textarea placeholder="Votre message"></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+      <section id="dropdown">
+        <h2>Découvrez plus</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Plus d'options</button>
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">Lien 1</a>
+            <a href="#" class="dropdown-item">Lien 2</a>
+            <a href="#" class="dropdown-item">Lien 3</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Ce site est fait avec ❤ et SCSS.</p>
+    </footer>
+  </body>
+</html>

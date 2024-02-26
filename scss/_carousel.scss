@@ -1,0 +1,40 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card {
+    @include flex-center;
+    @include box-style;
+    flex-direction: column; 
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-header {
+        height: 150px;
+        width: 100%;
+        background-color: custom-mix();
+    }
+
+    .card-content {
+        padding: 15px;
+        background-color: #fff; 
+
+        h3 {
+            margin-top: 0;
+            color: $primary-color;
+        }
+
+        p {
+            color: $text-color;
+            font-family: $font-stack;
+        }
+    }
+}

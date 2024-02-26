@@ -1,0 +1,16 @@
+main {
+    padding: 20px;
+    
+    section {
+      margin-bottom: 20px;
+    }
+    
+    h1, h2 {
+      color: $primary-color;
+    }
+    
+    p {
+      color: $text-color;
+      font-family: $font-stack;
+    }
+  }

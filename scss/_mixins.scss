@@ -1,0 +1,21 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin hover-effect {
+    transition: $hover-transition;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+}
+@mixin box-style {
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+}
+
+@function custom-mix() {
+    $percentage: random(100) * 1%;
+    @return mix($primary-color, $secondary-color, $percentage);
+}
